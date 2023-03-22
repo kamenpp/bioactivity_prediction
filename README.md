@@ -3,3 +3,8 @@ This repo contains a project on target prediction. I have trained two multi-task
 
 ## The results show that the model trained on ECFP4 is statistically significantly better than the one trained on the MACCS keys
 I have used permutation tests for the statistical hypothesis testing to compare the two models. In addition, both of the models do significantly better than random, which I tested using a bootstrap estimate of the distribution of the metrics for the random classifier, and their 95th percentile cut-off.
+
+
+Data is queried from the ChEMBL database as in the .sql file.
+
+The main motivation for choosing the particular bacterial targets is that in case of a bacterial infection we would like to target only the pathogen and not the symbiotic bacteria (e.g. in the gut).
